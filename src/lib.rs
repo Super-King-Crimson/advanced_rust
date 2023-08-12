@@ -15,3 +15,5 @@ pub mod topic {
 pub mod unsafe_rust;
 
 pub mod advanced_traits;
+
+pub mod advanced_types;
