@@ -1,6 +1,8 @@
 pub mod raw_pointers;
 pub mod functions_and_methods;
 pub mod mutable_static_variables;
+pub mod traits;
+pub mod unions;
 
 pub static mut HI: i8 = 10;
 
@@ -43,6 +45,11 @@ pub fn explain() {
     raw_pointers::explain();
     functions_and_methods::explain();
     mutable_static_variables::explain();
+    traits::explain();
+    unions::explain();
+
+    println!("Unsafe code isn't wrong, it's just difficult");
+    //The compiler can't protect you as much
 }
 
 unsafe fn add_ten_to_hi() {
